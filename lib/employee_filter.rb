@@ -8,7 +8,8 @@ class EmployeeFilter
 
   def started_before_2006
     @array.select do |em|
-      em[:start_year].year < 2006
+      puts em[:start_date]
+      em[:start_date].year < 2006
     end
 
 
