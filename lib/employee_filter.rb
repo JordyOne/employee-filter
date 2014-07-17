@@ -11,7 +11,11 @@ class EmployeeFilter
       puts em[:start_date]
       em[:start_date].year < 2006
     end
-
-
     end
+s
+  def all_with_start_date
+   @array.each do |arr|
+     puts "#{arr[:first_name]} #{arr[:last_name]} (#{arr[:title]}) - "
+end
+  end
   end
